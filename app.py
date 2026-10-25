@@ -116,9 +116,9 @@ st.title("Credit Risk Analytics Dashboard")
 st.caption("Portfolio risk overview and unusual account detection")
 
 # Load the prepared datasets
-portfolio = pd.read_csv("/content/dashboard_portfolio.csv")
-anomalies = pd.read_csv("/content/anomaly_results.csv")
-explanations = pd.read_csv("/content/account_risk_explanations.csv")
+portfolio = pd.read_csv("dashboard_portfolio.csv")
+anomalies = pd.read_csv("anomaly_results.csv")
+explanations = pd.read_csv("account_risk_explanations.csv")
 
 # Combine risk scores with anomaly results
 portfolio = portfolio.drop(
