@@ -122,6 +122,29 @@ Requirements:
 Write a professional account-specific description in
 approximately 5-8 sentences.
 
+
+RISK EXPLANATION RULES:
+
+1. Report the predicted default probability and risk segment
+   exactly as provided by the model.
+
+2. Do not invent risk drivers or protective factors.
+
+3. Mention risk drivers only when actual account-level
+   feature contribution values are provided.
+
+4. If feature contribution data is unavailable, simply state:
+   "No account-level risk-driver explanation was provided."
+
+5. Use the supplied anomaly label as the anomaly classification.
+   Do not infer the label from the anomaly score alone.
+
+6. Do not use alternative subjective risk categories such as
+   modest, moderate, or concerning when a model risk segment
+   is already available.
+
+7. Keep default-risk assessment and anomaly assessment separate.
+
 """
 
     
