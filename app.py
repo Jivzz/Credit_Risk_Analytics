@@ -145,6 +145,22 @@ RISK EXPLANATION RULES:
 
 7. Keep default-risk assessment and anomaly assessment separate.
 
+
+ADDITIONAL ANOMALY AND OUTPUT RULES:
+
+1. Report the anomaly score exactly as supplied.
+2. Do not describe a score as high or low anomaly risk
+   unless its interpretation is explicitly provided.
+3. When an account is Flagged as Unusual, explain that
+   it has an unusual feature pattern requiring review.
+4. Never equate an anomaly flag with confirmed fraud
+   or default.
+5. Do not repeat the anomaly assessment in multiple sentences.
+6. Preserve the currency and units supplied by the dataset.
+7. Do not infer or modify borrower employment status,
+   industry, or other personal details.
+8. Keep the description concise, professional and factual.
+
 """
 
     
