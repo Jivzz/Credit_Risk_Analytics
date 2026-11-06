@@ -158,11 +158,6 @@ Avoid generic filler. Every sentence should refer to this account's actual data.
         choice = response.choices[0]
         description = (choice.message.content or "").strip()
 
-        # Temporary debugging information
-        st.write("Debug - Model:", response.model)
-        st.write("Debug - Finish reason:", choice.finish_reason)
-        st.write("Debug - Content:", repr(choice.message.content))
-
         if not description:
             return None, (
                 f"Groq returned an empty description. "
