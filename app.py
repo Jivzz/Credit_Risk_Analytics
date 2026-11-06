@@ -146,7 +146,9 @@ Avoid generic filler. Every sentence should refer to this account's actual data.
                 }
             ],
             temperature=0.2,
-            max_tokens=450
+            max_completion_tokens=2000,
+            reasoning_effort="low",
+            include_reasoning=False
         )
 
         if not response.choices:
